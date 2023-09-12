@@ -1,0 +1,41 @@
+-- HW 01
+-- Create the "Artist" table
+CREATE TABLE Artist (
+    artist_id VARCHAR(36) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    birthday DATETIME,
+    PRIMARY KEY (artist_id)
+);
+
+-- Create the "Genre" table
+CREATE TABLE Genre (
+    genre_id VARCHAR(36) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    PRIMARY KEY (genre_id)
+);
+
+-- Create the "Album" table
+CREATE TABLE Album (
+    album_id VARCHAR(36) NOT NULL,
+    title VARCHAR(50) NOT NULL,
+    artist_id VARCHAR(36) NOT NULL,
+    genre_id VARCHAR(36),
+    liked_count INT NOT NULL DEFAULT 0,
+    release_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (album_id),
+    FOREIGN KEY (artist_id) REFERENCES Artist(artist_id),
+    FOREIGN KEY (genre_id) REFERENCES Genre(genre_id)
+);
+
+-- Create the GenreAlbumMapping table
+CREATE TABLE GenreAlbumMapping (
+    -- Primary key for the table
+    id VARCHAR(36) NOT NULL,
+    -- Foreign key reference to the 'album' table
+    album_id VARCHAR(36) NOT NULL,
+    -- Foreign key reference to the 'genre' table
+    genre_id VARCHAR(36) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (album_id) REFERENCES Album (album_id),
+    FOREIGN KEY (genre_id) REFERENCES Genre (genre_id)
+);
