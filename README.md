@@ -5,4 +5,4 @@
 - [CRUD in SQL DB](https://docs.google.com/presentation/d/1amn8pDX2Wx4N6ZjzhCGoQFJH4DqaRcQ2DJAdg3hbIrA/edit?usp=sharing)
 
 ### HW
-- [HW0]("https://youtu.be/0YByBBE8Av4")
+- [HW0](https://youtu.be/0YByBBE8Av4)
