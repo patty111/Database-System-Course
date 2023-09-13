@@ -6,4 +6,7 @@
 
 ### HW
 - [HW0](https://youtu.be/0YByBBE8Av4)
-- [HW1]()
+- [HW1]()  
+  
+![ERDiagram](assets/HW1.png)  
+ 
