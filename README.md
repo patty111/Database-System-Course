@@ -5,8 +5,8 @@
 - [CRUD in SQL DB](https://docs.google.com/presentation/d/1amn8pDX2Wx4N6ZjzhCGoQFJH4DqaRcQ2DJAdg3hbIrA/edit?usp=sharing)
 
 ### HW
-- [HW0](https://youtu.be/0YByBBE8Av4)
-- [HW1](https://youtu.be/NGauKnFqink)  
+- [HW0 video](https://youtu.be/0YByBBE8Av4)
+- [HW1 video](https://youtu.be/NGauKnFqink)  
   
 ![ERDiagram](assets/HW1.png)  
  
