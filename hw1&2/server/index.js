@@ -3,8 +3,10 @@ const mysql = require("mysql");
 const albumRouter = require("./routes/album");
 const artistRouter = require("./routes/artist");
 const genreRouter = require("./routes/genre");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 
 const connection = mysql.createConnection({
   host: 'localhost',
