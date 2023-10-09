@@ -7,6 +7,7 @@
 ### HW
 - [HW0 video](https://youtu.be/0YByBBE8Av4)
 - [HW1 video](https://youtu.be/NGauKnFqink)  
-  
 ![ERDiagram](assets/HW1.png)  
+- [HW2 video](https://youtu.be/kWTY3Whv5Y0)  
+  
  
