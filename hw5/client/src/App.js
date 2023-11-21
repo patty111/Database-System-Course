@@ -13,14 +13,14 @@ function App() {
   }, []);
 
   async function loadArtists() {
-    const result = await axios.get("http://localhost:8000/artist");
+    const result = await axios.get(`${process.env.REACT_APP_API_SERVER}/artist`);
     setArtists(result.data);
   }
 
   async function saveArtist(event) {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:8000/artist", {
+      await axios.post(`${process.env.REACT_APP_API_SERVER}/artist`, {
         name: name,
         birthday: birthday,
       });
@@ -41,7 +41,7 @@ function App() {
   }
 
   async function deleteArtist(id) {
-    await axios.delete(`http://localhost:8000/artist/${id}`);
+    await axios.delete(`${process.env.REACT_APP_API_SERVER}/artist/${id}`);
     alert("Artist deleted successfully");
     await loadArtists();
   }
@@ -49,7 +49,7 @@ function App() {
   async function updateArtist(event) {
     event.preventDefault();
     try {
-      await axios.put(`http://localhost:8000/artist/${editId}`, {
+      await axios.put(`${process.env.REACT_APP_API_SERVER}/artist/${editId}`, {
         name: name,
         birthday: birthday,
       });
